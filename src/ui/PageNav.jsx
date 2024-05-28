@@ -16,7 +16,7 @@ function PageNav() {
   }
 
   return (
-    <nav className="text-xs font-extrabold tracking-wide">
+    <nav className="w-full text-xs font-extrabold tracking-wide">
       <ul ref={sidebarRef} className={styles.sidebar}>
         <li onClick={hideSidebar} className="cursor-pointer">
           <a>
@@ -50,7 +50,7 @@ function PageNav() {
           </NavLink>
         </li>
       </ul>
-      <ul className="grid grid-cols-[.4fr_1fr] items-center justify-center md:block">
+      <ul className="grid grid-cols-[.4fr_1fr] items-center justify-center sm:grid-cols-[.6fr_1fr] md:block">
         <li className={styles.menuButton} onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
