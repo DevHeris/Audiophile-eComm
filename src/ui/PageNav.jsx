@@ -16,9 +16,9 @@ function PageNav() {
   }
 
   return (
-    <nav className="text-sm font-semibold">
+    <nav className="text-xs font-extrabold tracking-wide">
       <ul ref={sidebarRef} className={styles.sidebar}>
-        <li onClick={hideSidebar}>
+        <li onClick={hideSidebar} className="cursor-pointer">
           <a>
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
               <path
@@ -50,7 +50,7 @@ function PageNav() {
           </NavLink>
         </li>
       </ul>
-      <ul className="w-full">
+      <ul className="grid grid-cols-[.4fr_1fr] items-center justify-center md:block">
         <li className={styles.menuButton} onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
@@ -60,7 +60,7 @@ function PageNav() {
             </svg>
           </a>
         </li>
-        <div className="m-auto flex w-[80%] items-center justify-between">
+        <div className="flex items-center justify-between gap-6 border-gray-600 md:m-auto md:w-[75%] md:border-b md:pb-4">
           <div>
             <li>
               <NavLink>
@@ -68,7 +68,7 @@ function PageNav() {
               </NavLink>
             </li>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-7">
             <li className={styles.hideOnMobile}>
               <NavLink to="/">HOME</NavLink>
             </li>
@@ -82,8 +82,8 @@ function PageNav() {
               <NavLink to="/category/earphones">EARPHONES</NavLink>
             </li>
           </div>
-          <div className={styles.hideOnMobile}>
-            <li className="flex items-center justify-center">
+          <div>
+            <li className="flex cursor-pointer items-center justify-center">
               <img
                 src="src/assets/shared/desktop/icon-cart.svg"
                 alt="cart logo"

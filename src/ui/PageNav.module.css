@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  /* background-color: white; */
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
 nav ul {
   width: 100%;
   list-style: none;
@@ -23,16 +18,15 @@ nav li {
 
 nav a {
   height: 100%;
-  /* padding: 0 30px; */
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: white;
+  color: #e3e3e3;
 }
 
-/* nav a:hover {
-  background-color: #f0f0f0;
-} */
+nav a:hover {
+  color: #d87d4a;
+}
 
 nav li:first-child {
   margin-right: auto;
@@ -42,7 +36,7 @@ nav li:first-child {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100dvh;
   width: 250px;
   z-index: 999;
   box-shadow: -10 0 10px rgba(0, 0, 0, 0.1);
@@ -51,9 +45,11 @@ nav li:first-child {
   align-items: flex-start;
   justify-content: flex-start;
 
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+  padding-left: 2em;
+  padding-top: 1em;
 
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
   backdrop-filter: blur(10px);
 }
 
@@ -69,7 +65,7 @@ nav li:first-child {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hideOnMobile {
     display: none;
   }
@@ -83,4 +79,15 @@ nav li:first-child {
   .sidebar {
     width: 100%;
   }
+}
+
+/* CSS Modules feature */
+nav a:global(.active) {
+  color: #d87d4a;
+}
+
+a.ctaLink:link,
+a.ctaLink:visited {
+  background-color: #d87d4a;
+  color: #e3e3e3;
 }
