@@ -50,7 +50,7 @@ function PageNav() {
           </NavLink>
         </li>
       </ul>
-      <ul className="grid grid-cols-[.4fr_1fr] items-center justify-center sm:grid-cols-[.6fr_1fr] md:block">
+      <ul className="grid grid-cols-[.4fr_1fr] items-center justify-center sm:grid-cols-[.15fr_1fr] md:block">
         <li className={styles.menuButton} onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
@@ -60,7 +60,7 @@ function PageNav() {
             </svg>
           </a>
         </li>
-        <div className="flex items-center justify-between gap-6 border-gray-600 md:m-auto md:w-[75%] md:border-b md:pb-4">
+        <div className="flex items-center justify-between gap-6 border-gray-600 md:m-auto md:w-[85%] md:border-b md:pb-3 ">
           <div>
             <li>
               <NavLink>

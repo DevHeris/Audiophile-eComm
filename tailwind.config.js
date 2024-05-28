@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       sans: ["Manrope", "sans-serif"],
     },
+
     extend: {
       height: {
         screen: "100dvh",
@@ -18,6 +19,9 @@ export default {
         "hero-image-mobile": "url('/src/assets/home/mobile/image-header.jpg')",
         "hero-image-tablet": "url('/src/assets/home/tablet/image-header.jpg')",
         "hero-image-desktop": "url('/src/assets/home/desktop/image-hero.jpg')",
+      },
+      screens: {
+        md: "900px",
       },
     },
   },
