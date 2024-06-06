@@ -16,7 +16,7 @@ function CategoryDisplayItem({ category, imgSrc }) {
         >
           shop
           <img
-            src="/src/assets/shared/desktop/icon-arrow-right.svg"
+            src="/assets/shared/desktop/icon-arrow-right.svg"
             alt="arrow-icon"
           />
         </Link>

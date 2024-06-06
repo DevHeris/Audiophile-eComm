@@ -82,10 +82,7 @@ function PageNav() {
           </div>
           <div>
             <li className="flex cursor-pointer items-center justify-center">
-              <img
-                src="/src/assets/shared/desktop/icon-cart.svg"
-                alt="cart logo"
-              />
+              <img src="/assets/shared/desktop/icon-cart.svg" alt="cart logo" />
             </li>
           </div>
         </div>

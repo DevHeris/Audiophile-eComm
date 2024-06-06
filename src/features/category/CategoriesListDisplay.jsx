@@ -6,15 +6,15 @@ function CategoriesListDisplay() {
       <ul className="flex flex-col items-end  sm:flex-row sm:gap-3 md:gap-6">
         <CategoryDisplayItem
           category="headphones"
-          imgSrc="/src/assets/shared/desktop/image-category-thumbnail-headphones.png"
+          imgSrc="/assets/shared/desktop/image-category-thumbnail-headphones.png"
         />
         <CategoryDisplayItem
           category="speakers"
-          imgSrc="/src/assets/shared/desktop/image-category-thumbnail-speakers.png"
+          imgSrc="/assets/shared/desktop/image-category-thumbnail-speakers.png"
         />
         <CategoryDisplayItem
           category="earphones"
-          imgSrc="/src/assets/shared/desktop/image-category-thumbnail-earphones.png"
+          imgSrc="/assets/shared/desktop/image-category-thumbnail-earphones.png"
         />
       </ul>
     </section>
