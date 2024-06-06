@@ -6,9 +6,9 @@ function CategoryDisplayItem({ category, imgSrc }) {
       <img
         src={imgSrc}
         alt={`${category} image`}
-        className="z-10 max-w-[80%] md:max-w-[60%]"
+        className=" z-10 max-w-[80%] md:max-w-[60%]"
       />
-      <div className="md:pt-26 flex w-full -translate-y-[65%] flex-col items-center rounded-lg bg-gray-100 pb-7 pt-24  md:-translate-y-[60%]">
+      <div className="flex w-full -translate-y-[75%] flex-col items-center rounded-lg bg-gray-100 pb-7 pt-28 sm:-translate-y-[65%] sm:pt-24 md:-translate-y-[60%] ">
         <h4 className="pb-1.5 font-bold text-zinc-950">{category}</h4>
         <Link
           to={`/category/${category}`}
