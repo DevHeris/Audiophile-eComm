@@ -3,11 +3,11 @@ import LinkButton from './LinkButton';
 function Hero() {
   return (
     <section
-      className=" flex items-center bg-hero-image-mobile bg-cover bg-bottom bg-no-repeat pt-6 sm:h-[80dvh] sm:bg-hero-image-tablet sm:bg-center   md:h-[85dvh] md:justify-start md:bg-hero-image-desktop"
+      className=" flex h-[80dvh] items-center bg-hero-image-mobile bg-cover bg-bottom bg-no-repeat pt-6 sm:h-3/4 sm:bg-hero-image-tablet sm:bg-center md:h-[85dvh] md:justify-start md:bg-hero-image-desktop"
       style={{ backgroundPosition: 'bottom 25% ' }}
     >
       <div className=" sm:m-auto md:w-[85%]">
-        <div className=" m-auto w-[95%] py-24 text-center sm:w-[27rem]  md:m-0 md:w-[40%] md:text-left">
+        <div className=" m-auto w-[95%] text-center sm:w-[27rem]  md:m-0  md:w-[40%]  md:text-left">
           <h3 className="mb-4 mt-2 uppercase tracking-[10px] text-gray-400 sm:text-xl md:mb-5 md:text-base">
             new product
           </h3>

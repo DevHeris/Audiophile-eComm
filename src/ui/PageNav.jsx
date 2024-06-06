@@ -16,7 +16,7 @@ function PageNav() {
   }
 
   return (
-    <nav className="w-full text-xs font-extrabold tracking-wide">
+    <nav className="w-full text-xs  font-extrabold tracking-wide">
       <ul ref={sidebarRef} className={styles.sidebar}>
         <li onClick={hideSidebar} className="cursor-pointer">
           <a>
@@ -63,9 +63,7 @@ function PageNav() {
         <div className="flex items-center justify-between gap-6 border-gray-600 md:m-auto md:w-[85%] md:border-b md:pb-3 ">
           <div>
             <li>
-              <NavLink>
-                <Logo />
-              </NavLink>
+              <Logo />
             </li>
           </div>
           <div className="flex gap-7">
